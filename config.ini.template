@@ -1,0 +1,13 @@
+[local]
+host = 0.0.0.0
+port = 25
+
+[remote]
+host = email-smtp.us-west-2.amazonaws.com
+port = 587
+local_hostname = mail.foo.com
+starttls = yes
+smtp_auth = yes
+smtp_auth_user = SES_AUTH_USER_HERE
+smtp_auth_password = SES_AUTH_PASS_HERE
+debug_level = 1
