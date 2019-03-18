@@ -14,7 +14,10 @@
 
 
 ```
-docker build -t ziozzang/ses-relay
+docker build -t ziozzang/ses-relay .
 docker run -it -v `pwd`/config.ini:/opt/config.ini --rm -p 80:8025 -p 25:25  ziozzang/ses-relay
 
 ```
+# External Dependency
+* MailHog: https://github.com/mailhog/MailHog
+* Mail Proxy: https://github.com/kz26/mailproxy
